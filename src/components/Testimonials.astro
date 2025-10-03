@@ -1,0 +1,96 @@
+---
+import Section from "./Section.astro";
+
+interface Testimonial {
+  photo: string;
+  nom: string;
+  texte: string;
+  fonction?: string;
+}
+
+const { testimonials } = Astro.props as { testimonials: Testimonial[] };
+---
+
+<Section text="Témoignages" href="temoignages">
+  <div class="testimonials-list">
+    {testimonials.map((t: Testimonial) => (
+      <div class="testimonial-card">
+        <img src={t.photo} alt={`Photo de ${t.nom}`} class="testimonial-photo" loading="lazy" />
+        <div class="testimonial-content">
+          <p class="testimonial-text">{t.texte}</p>
+          <div class="testimonial-author">
+            <span class="testimonial-name">{t.nom}</span>
+            {t.fonction && <span class="testimonial-role">{t.fonction}</span>}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</Section>
+
+<style>
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.testimonial-card {
+  background: rgba(28,35,45,0.85);
+  border-radius: 1.2rem;
+  border: 1.5px solid #5755ff33;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 2.2rem 1.7rem 1.7rem 1.7rem;
+  max-width: 340px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px #5755ff22;
+}
+.testimonial-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 3px solid #5755ff;
+  background: #fff;
+}
+.testimonial-content {
+  flex: 1;
+  width: 100%;
+}
+.testimonial-text {
+  font-size: 1.08rem;
+  color: #e0e0e0;
+  margin-bottom: 1.1rem;
+  font-style: italic;
+  font-family: 'Inter', sans-serif;
+}
+.testimonial-author {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+.testimonial-role {
+  display: block;
+  font-size: 0.97rem;
+  color: #b3b3b3;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+@media (max-width: 800px) {
+  .testimonials-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>

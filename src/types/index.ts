@@ -13,6 +13,14 @@ export interface SiteContent {
   experience: ExperienceProps[];
   projects: ProjectProps[];
   about: AboutProps;
+  testimonials: TestimonialProps[];
+}
+
+export interface TestimonialProps {
+  nom: string;
+  texte: string;
+  photo: string;
+  fonction?: string;
 }
 
 export interface HeroProps {

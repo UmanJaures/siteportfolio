@@ -9,7 +9,7 @@ interface Props {
 const { experience } = Astro.props;
 ---
 
-<Section text="Work Experience" href="experience">
+<Section text="Expériences & Réalisations" href="experience">
   {
     experience.map(({ company, position, startDate, endDate, summary }) => (
       <div class="mb-10">
@@ -21,7 +21,7 @@ const { experience } = Astro.props;
             {position}
           </h4>
           <span class="pb-[2px] text-sm text-white/70">
-            {startDate} — {endDate}
+            {startDate}  {endDate}
           </span>
         </div>
         {Array.isArray(summary) ? (

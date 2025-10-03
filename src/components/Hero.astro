@@ -22,6 +22,8 @@ const { name, specialty, summary, email } = Astro.props;
 
   <a
     class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
-  >
+    href={email.includes('@') ? `mailto:${email}` : email}
+    target={email.includes('@') ? undefined : "_blank"}
+    rel={email.includes('@') ? undefined : "noopener noreferrer"}
+  >Contactez moi</a>
 </section>

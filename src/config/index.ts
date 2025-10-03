@@ -1,97 +1,180 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "GNEZE DANIEL — Électricien professionnel et qualifié ",
+  author: "GNEZE DANIEL",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-  lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+    " Gneze Daniel Ezechiel, électricien qualifié basé à Abidjan, spécialisé dans l’installation, la rénovation et la maintenance électrique. Je propose des solutions électriques sûres, fiables et conformes aux normes, adaptées aussi bien aux particuliers qu’aux entreprises de construction. Engagé, rigoureux et orienté qualité, j'accompagne ses clients dans tous leurs projets électriques pour garantir performance, durabilité et sécurité.",
+  lang: "fr",
+  siteLogo: "/logo.png",
   navLinks: [
     { text: "Experience", href: "#experience" },
-    { text: "Projects", href: "#projects" },
-    { text: "About", href: "#about" },
+    { text: "Projets", href: "#projects" },
+    { text: "Témoignages", href: "#temoignages" },
+    { text: "a propos", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "Facebook", href: "https://www.facebook.com/profile.php?id=61578791547315" },
+    { text: "Whatsapp", href: "https://wa.me/qr/E23CMSZKS2VSB1" },
+    { text: "LinkedIn", href: "" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/logo.png",
+  canonicalURL: "/",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "GNEZE DANIEL",
+    specialty: "ÉLECTRICIEN BÂTIMENT",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      " Dani+ vous offre des solutions électriques modernes et durables, alliant sécurité, fiabilité et performance pour chaque projet.",
+    email: "https://wa.me/qr/B5VYLL6NVA37A1",
   },
+  testimonials: [
+    {
+      nom: "Fatou KONE",
+      texte: "Daniel a réalisé l'installation électrique complète de mon appartement avec un grand professionnalisme. Je recommande vivement !",
+      photo: "/logo.png",
+      fonction: "Cliente particulière"
+    },
+    {
+      nom: "Jean-Marc DIALLO",
+      texte: "Un service rapide et efficace pour la rénovation de notre boutique. Merci pour les conseils et la qualité du travail !",
+      photo: "/logo.png",
+      fonction: "Commerçant"
+    },
+    {
+      nom: "Jean-Marc DIALLO",
+      texte: "Un service rapide et efficace pour la rénovation de notre boutique. Merci pour les conseils et la qualité du travail !",
+      photo: "/logo.png",
+      fonction: "Commerçant"
+    },
+    {
+      nom: "Awa TRAORE",
+      texte: "J'ai fait appel à Daniel pour la création de mes supports graphiques. Le rendu est moderne et professionnel.",
+      photo: "/logo.png",
+      fonction: "Entrepreneure"
+    }
+  ],
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "COMPLEXE COMMERCIAL ET RESIDENTIEL – Yopougon (Abidjan)",
+      position: "Rénovation électrique complète du complexe comprenant 6 magasins et 10 studio",
+      startDate: "",
+      endDate: "",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        " Rénovation électrique complète du complexe comprenant 6 magasins et 10 studios",
+        " Reprise de la tuyauterie, câblage et nouveaux circuits",
+        " Montage du tableau principal et divisionnaires",
+        " Pose des prises, interrupteurs et luminaires",
+        " Livraison dans les délais avec respect strict des normes de sécurité",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "BATIMENT R+2 – Village de Dabou",
+      position: "Réalisation complète de l’installation électrique de ce bâtiment R+2",
+      startDate: "",
+      endDate: "",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Étude et mise en place de la tuyauterie électrique",
+        "Passage des câbles et installation complète",
+        "Montage des tableaux électriques",
+        "Pose des appareillages et mise en service finale",
+        "Chantier livré dans le respect des délais et normes",
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
+      company: "DEPANNAGES ET SERVICES DIVERS – Abidjan",
+      position: " Parce que l’électricité ne s’arrête pas aux grands projets, nous intervenons aussi pour tous vos dépannages du quotidiens.",
+      startDate: "",
+      endDate: "",
       summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+        "",
+    },
+    {
+      company: "Dépannage domestique",
+      position: " ",
+      startDate: "",
+      endDate: "",
+      summary:[
+        " Coupures de courant, courts-circuits, disjoncteurs",
+        " Remplacement de vos appareils domestiques (fusibles, prises, ineterrupteurs)",
+        " Pannes d’éclairage et appareils électroménagers",
+      ],
+    },
+    {
+      company: "Dépannage tertiaire (Bureaux, commerces, magasins, boutiques etc...)",
+      position: " ",
+      startDate: "",
+      endDate: "",
+      summary:[
+        " Pannes sur tableaux électriques et surcharges",
+        " Réparation de prises industrielles et circuits spécialisés",
+        " Mise à la terre et protections différentielles",
+        " Éclairage publicitaire et enseignes lumineuses",
+      ],
+    },
+    {
+      company: "Dépannage chantier / industriel",
+      position: " ",
+      startDate: "",
+      endDate: "",
+      summary:[
+        " Remise en marche de moteurs et machines",
+        " Remplacement de contacteurs et relais",
+        " Vérification et réparation de coffrets et tableaux TGBT",
+        " Détection et correction de défauts de câblage",
+      ],
+    },
+    {
+      company: " Maintenance préventive",
+      position: " ",
+      startDate: "",
+      endDate: "",
+      summary:[
+        " Contrôle et entretien des installations électriques et appareils electroménagers",
+        " Vérification des dispositifs de sécurité",
+        " Remplacement préventif des pièces usées (prises, câbles, protections)",
+        " Tests de continuité et conformité aux normes électriques",
+      ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Bâtiment R+2",
+      summary: "Un projet qui allie modernité et sécurité électrique pour offrir confort aux résidents et fiabilité aux commerçants.",
+      linkPreview: "https://wa.me/qr/E23CMSZKS2VSB1",
+      linkSource: "https://www.facebook.com/profile.php?id=61578791547315",
+      image: "/complexe.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "Complexe magasin + studios",
+      summary: " Une installation électrique pensée pour la durabilité, garantissant sérénité et performance à long terme.",
+      linkPreview: "https://wa.me/qr/E23CMSZKS2VSB1",
+      linkSource: "https://www.facebook.com/profile.php?id=61578791547315",
+      image: "/magasin.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: " Services de dépannage",
+      summary: " Réactivité et fiabilité pour tous vos dépannages, qu’ils soient domestiques, tertiaires ou industriels.",
+      linkPreview: "https://wa.me/qr/E23CMSZKS2VSB1",
+      linkSource: "https://www.facebook.com/profile.php?id=61578791547315",
+      image: "/depanage.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
-
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+       Je suis Gneze Daniel Ezechiel, électricien qualifié basé à Abidjan en Côte d’ivoire, 
+       spécialisé dans l’installation, la rénovation et la maintenance électrique. Avec plus de 
+       deux années d’expérience et une équipe de 04 techniciens expérimentés, je propose des 
+       solutions électriques sûres, fiables et conformes aux normes, adaptées aussi bien aux 
+       particuliers qu’aux entreprises de construction. Mon expertise couvre l’installation 
+       complète de réseaux électriques, le câblage de tableaux, la mise aux normes, ainsi que 
+       le dépannage rapide. Engagé, rigoureux et orienté qualité, j’accompagne mes clients dans 
+       tous leurs projets électriques pour garantir performance, durabilité et sécurité.
+      
     `,
-    image: "/alejandro-big.jpg",
+    image: "/daniel.jpg",
   },
 };
 
